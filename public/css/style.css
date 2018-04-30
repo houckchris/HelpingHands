@@ -1,12 +1,14 @@
 body {
   background-image: url(../images/bckgdPic.jpg);
   background-size: cover;
+
   margin: 0;
   padding: 0;
 }
 .homePage{
   background-image: url(../images/bckgdPicHome.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
 }
@@ -63,7 +65,43 @@ text-align: left;
 
 
 /* HomePage Styles */
+#homeLogo{
+  width: 85%;
 
+}
+.homeText{
+  color:white;
+  padding-left: 96px;
+    padding-right: 96px;
+    margin-top: -48px;
+    font-size: 22px;
+}
+
+.homeButton{
+  background-color: rgb(9, 139, 199); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 250px;
+
+}
+.twoButton{
+  margin-top:50px;
+
+}
+
+.homeButton:hover {background-color: red}
+
+.homeButton:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 
 /* Volunteer Styles */
@@ -208,6 +246,7 @@ h3.eventDate{
 
 .spaceHome{
   margin-bottom: 185px;
+  height:100px;
 }
 
 /* Helper Classes  */
