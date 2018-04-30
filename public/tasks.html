@@ -51,127 +51,138 @@
 
         <form id="taskForm" class="col s12">
             <div class="row">
-                
-                <div class="input-field col s6" >
-                        <!-- <input id="orgName" type="text" class="validate"> -->
-                     <select id="orgName">
-                        <option value="" disabled selected>Choose your option</option>
-                    </select>
-                    <label for="Category">Organization Name</label>
-                   </div>
-               
-                <div class="input-field col s6">
-                    <input id="taskTitle" type="text" class="validate">
-                    <label id="taskTitle" for="first_name">Task Title</label>
-                </div>
-      
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Short description of task" id="taskDesc" type="text" class="validate">
-                    <label id="Desc" for="first_name">Task Description</label>
-                </div>
 
-            </div>
-            <div class="row">
-                <div class="input-field col s4">
-                    <input id="taskAddr"  type="text" class="validate">
-                    <label id="Addr" for="first_name">Task Address</label>
-                </div>
-                <div class="input-field col s4">
-                    <input id="taskCity"  type="text" class="validate">
-                    <label id="City" for="last_name">City</label>
-                </div>
-                <div class="input-field col s2">
-                    <input id="taskState"  type="text" class="validate">
-                    <label id="State" for="last_name">State</label>
-                </div>
-                <div class="input-field col s2">
-                    <input id="taskZip"type="text" class="validate">
-                    <label id="Zip" for="last_name">Zip Code</label>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="input-field col s2">
-                    <input id="taskDate" placeholder="Date" type="text" class="datepicker">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="center-align">
+                            <img class="eventPimage" src="./images/createEvent2.png">
+                        </div>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input placeholder="" id="first_name" type="text" class="validate">
+                        <label id="taskTitle" for="first_name">Event Title</label>
+                    </div>
+                    <div id="orgName" class="input-field col s6">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Habitat for Humanity</option>
+                            <option value="2">Salvation Army</option>
+                            <option value="3">Goodwill</option>
+                            <option value="4">Red Cross</option>
+                        </select>
+                        <label>Organization Name</label>
+                    </div>
 
                 </div>
-                <div class="input-field col s2">
 
-                    <input id="taskTime" placeholder="Time" type="text" class="timepicker">
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Short description of event" id="taskDesc" type="text" class="validate">
+                        <label id="Desc" for="first_name">Event Description</label>
+                    </div>
 
                 </div>
-                <div class="input-field col s2">
-                    <input id="taskSlots" type="text" class="validate">
-                    <label id="Slots" for="last_name">Slots</label>
-                </div>
-
-                <div id="taskDuration" class="input-field col s3">
-                    <select>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">1hr</option>
-                        <option value="2">2hr</option>
-                        <option value="3">3hr</option>
-                        <option value="4">4hr</option>
-                        <option value="5">5hr</option>
-                        <option value="6">6hr</option>
-                        <option value="7">7hr</option>
-                        <option value="8">8hr</option>
-                    </select>
-                    <label>Task Duration</label>
-                </div>
-                <div class="col s3" id="categorySec">
-                    <div>
-                        <div id="taskCat" class="radioForm" action="#">
-                            <label id="skill" for="last_name">Preffered Skill</label>
-                            <p>
-                                <label>
-                                    <input name="group1" type="radio" checked />
-                                    <span>Construction</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span>Food Service</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span>Landscaping</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span>Tutoring</span>
-                                </label>
-                            </p>
-                        </form>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="taskAddr" type="text" class="validate">
+                        <label id="Addr" for="first_name">Event Address</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="taskCity" type="text" class="validate">
+                        <label id="City" for="last_name">City</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input id="taskState" type="text" class="validate">
+                        <label id="State" for="last_name">State</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input id="taskZip" type="text" class="validate">
+                        <label id="Zip" for="last_name">Zip Code</label>
                     </div>
                 </div>
 
-                <div class="col s12">
-                    <!-- <div class="submitButton center-align">
-                        <a class="waves-effect waves-light btn">
-                            <i class="material-icons left">send</i>submit</a> -->
-
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                                    <i class="material-icons right">send</i>
-                                  </button>
+                <div class="row">
+                    <div class="input-field col s2">
+                        <input id="eventDate" placeholder="Date" type="text" class="datepicker">
+    
+                    </div>
+                    <div class="input-field col s2">
+    
+                        <input id="eventTime" placeholder="Time" type="text" class="timepicker">
+    
+                    </div>
+                    <div class="input-field col s2">
+                        <input id="last_name" type="text" class="validate">
+                        <label id="eventSlots" for="last_name">Slots</label>
+                    </div>
+    
+                    <div id="orgName" class="input-field col s3">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1hr</option>
+                            <option value="2">2hr</option>
+                            <option value="3">3hr</option>
+                            <option value="4">4hr</option>
+                            <option value="5">5hr</option>
+                            <option value="6">6hr</option>
+                            <option value="7">7hr</option>
+                            <option value="8">8hr</option>
+                        </select>
+                        <label>Event Duration</label>
+                    </div>
+                    <div class="col s3" id="categorySec">
+                        <div>
+                            <form id="eventCat" class="radioForm" action="#">
+                                <label id="skill" for="last_name">Preffered Skill</label>
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" checked />
+                                        <span>Construction</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Food Service</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Landscaping</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Tutoring</span>
+                                    </label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="col s12">
+                        <div class="submitButton center-align">
+                            <a class="waves-effect waves-light btn">
+                                <i class="material-icons left">send</i>submit</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
+           
         </form>
     </div>
+    
 
+    
     <!-- Main HomePage Area -->
 
     <script>
-
-
         $(document).ready(function () {
             $('.datepicker').datepicker();
         });
