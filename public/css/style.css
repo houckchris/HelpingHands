@@ -4,6 +4,12 @@ body {
   margin: 0;
   padding: 0;
 }
+.homePage{
+  background-image: url(../images/bckgdPicHome.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
 
 #mainPic {
   background-image: url(../images/mobiledevices/LoadPage2.jpg);
@@ -42,6 +48,23 @@ body {
 
 text-align: left;
 }
+
+/* HomePage Styles */
+
+.logoHolder{
+
+  margin-top: 11%;
+}
+
+.logoImageText{
+  color:white;
+  font-size:20px;
+}
+
+
+/* HomePage Styles */
+
+
 
 /* Volunteer Styles */
 
@@ -92,6 +115,21 @@ text-align: left;
 
 
 /* Event Styles */
+
+.emptySpace{
+  height:40px;
+  margin-top: 34px;
+}
+
+
+#eventForm{
+
+}
+
+.eventPimage{
+
+  width: 80%;
+}
 
 #categorySec{
   padding-left: 50px;
@@ -165,6 +203,10 @@ h3.eventDate{
 }
 
 .space {
+  margin-bottom: 185px;
+}
+
+.spaceHome{
   margin-bottom: 185px;
 }
 
