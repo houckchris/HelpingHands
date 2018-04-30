@@ -1,2 +1,2 @@
-# HelpingHands
-A simple app to connect volunteers and organizations!
+# project2
+Project 2
