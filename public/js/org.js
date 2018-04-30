@@ -1,9 +1,10 @@
+
 $(document).ready(function () {
-  $('select').formSelect();
+  // $('select').formSelect();
 
     //Get references to the task creation form fields
 
-  
+    var orgSelect = $("#orgName");
     var taskTitleInput = $("#taskTitle");
     var taskDescInput = $("#taskDesc");
     var taskDateInput = $("#taskDate");
@@ -16,19 +17,19 @@ $(document).ready(function () {
     var taskDurationInput = $("#taskDuration");
     var taskCatInput = $("#taskCat");
     var taskForm = $("#taskForm");
-    var orgSelect = $("#orgName");
+   
 
  // Getting the orgs, and their tasks
 
- getOrgs();
+//  getOrgs();
  
-    // Adding an event listener for when the form is submtted
-
 $(taskForm).on('submit',function(e){
-    e.preventDefault();  
-    handleFormSubmit();
+  
+  e.preventDefault();  
+  console.log("click")
+  handleFormSubmit();
 
-
+})
 
     //  // A function for rendering the list of orgs to the page
  function renderOrgList(data) {
@@ -61,20 +62,20 @@ $(taskForm).on('submit',function(e){
   var url = window.location.search;
   var taskId;
   var newTask;
-  var orgId;
+  // var orgId;
 //   // Sets a flag for whether or not we're updating an task to be false initially
   var updating = false;
 console.log("updating: " + updating)
 //      // If we have this section in our url, we pull out the task id from the url
 //   // In '?post_id=1', postId is 1
-  if (url.indexOf("?task_id=") !== -1) {
-    orgId = url.split("=")[1];
-    getTaskData(taskId, "task");
-  }
+  // if (url.indexOf("?task_id=") !== -1) {
+  //   orgId = url.split("=")[1];
+  //   getTaskData(taskId, "task");
+  // }
 //    // Otherwise if we have an org_id in our url, preset the org select box to be our Org
-   else if (url.indexOf("?org_id=") !== -1) {
-    orgId = url.split("=")[1];
-  }
+  //  else if (url.indexOf("?org_id=") !== -1) {
+  //   orgId = url.split("=")[1];
+  // }
 
   // A function for handling what happens when the form to create a new post is submitted
   function handleFormSubmit(event) {
@@ -105,18 +106,20 @@ console.log("updating: " + updating)
       
     };
     console.log(newTask)
+   
 }
   // If we're updating an task run updateEvent to update an task
 // Otherwise run submitTask to create a whole new post
-if (updating) {
-    newTask.id = taskId;
-    updateTask(newTask);
-  }
-  else {
-    submitTask(newTask);
-  }
+// if (updating) {
+//     newTask.id = taskId;
+//     updateTask(newTask);
+//   }
+//   else {
+//     submitTask(newTask);
+//   }
   // Submits a new task and brings user to tasks page upon completion
-    
+  submitTask(newTask);
+  
   function submitTask(task) {
     $.post("/api/tasks", task, function() {
       window.location.href = "/tasks";
@@ -139,8 +142,10 @@ if (updating) {
 //   }
 
    
+    // Adding an event listener for when the form is submtted
+
 
       
             
-});
+
 });
