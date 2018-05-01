@@ -14,7 +14,7 @@ module.exports = function(app) {
 
   // index route loads index.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
   // index route loads index.html
@@ -37,4 +37,13 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
+    // orgs route loads orgs.html
+    app.get("/orgs", function(req, res) {
+      res.sendFile(path.join(__dirname, "../public/orgs.html"));
+    });
+
+  // volunteer route loads volunteer.html
+  app.get("/volunteer", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/volunteer.html"));
+  });
 };
