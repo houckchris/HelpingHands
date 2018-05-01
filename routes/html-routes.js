@@ -14,12 +14,17 @@ module.exports = function(app) {
 
   // index route loads index.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   // index route loads index.html
   app.get("/index", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
+  });
+
+  // index route loads index.html
+  app.get("/voldash", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/voldash.html"));
   });
 
   // tasks route loads tasks.html
@@ -37,10 +42,6 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
-    // orgs route loads orgs.html
-    app.get("/orgs", function(req, res) {
-      res.sendFile(path.join(__dirname, "../public/orgs.html"));
-    });
 
   // volunteer route loads volunteer.html
   app.get("/volunteer", function(req, res) {
