@@ -45,11 +45,7 @@
 
     <div class="space"></div>
 
-
-
     <div class="row container" id="whiteBackd">
-
-
         <form id="eventForm" class="col s12">
             <div class="row">
                 <div class="input-field col s12">
@@ -58,29 +54,26 @@
                     </div>
                 </div>
                 <div class="input-field col s4">
-                    <input placeholder="" id="first_name" type="text" class="validate">
-                    <label id="eventTitle" for="first_name">Name</label>
+                    <input placeholder="" id="firstName" type="text" class="validate">
+                    <label id="eventTitle" for="firstName">Name</label>
                 </div>
                 <div class="input-field col s4">
-                    <input placeholder="" id="first_name" type="text" class="validate">
-                    <label id="eventTitle" for="first_name">Email</label>
+                    <input placeholder="" id="email" type="text" class="validate">
+                    <label id="eventTitle" for="email">Email</label>
                 </div>
                 <div class="input-field col s4">
-                    <input placeholder="" id="first_name" type="text" class="validate">
-                    <label id="eventTitle" for="first_name">ZipCode</label>
+                    <input placeholder="" id="zipCode" type="text" class="validate">
+                    <label id="eventTitle" for="zipCode">ZipCode</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                    <label id="eventDesc" for="first_name">About Me</label>
+                    <input placeholder="Placeholder" id="aboutme" type="text" class="validate">
+                    <label id="eventDesc" for="aboutMe">About Me</label>
                 </div>
 
             </div>
-
-
             <div class="row">
-
                 <div class="col s6">
                     <form action="#">
                         <div class="file-field input-field">
@@ -89,11 +82,10 @@
                                 <input type="file">
                             </div>
                             <div class="file-path-wrapper">
-                                <input placeholder="Placeholder"class="file-path validate" type="text">
+                                <input placeholder="Placeholder" id="photoPath" class="file-path validate" type="text">
                             </div>
                         </div>
                     </form>
-
                 </div>
 
                 <div class="col s6" id="categorySec">
@@ -102,25 +94,25 @@
                             <label id="skill" for="last_name">Preffered Skill</label>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" checked />
+                                    <input id="constructionSkill" name="skills" type="radio" value="Construction" checked />
                                     <span>Construction</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" />
+                                    <input id="foodSkill" name="skills" type="radio" value="Food Service" />
                                     <span>Food Service</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" />
+                                    <input id="landscapingSkill" name="skills" type="radio" value="Landscaping" />
                                     <span>Landscaping</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" />
+                                    <input id="tutoringSkill" name="skills" type="radio" value="Tutoring" />
                                     <span>Tutoring</span>
                                 </label>
                             </p>
@@ -131,7 +123,9 @@
                 <div class="col s12">
                     <div class="submitButton center-align">
                         <a class="waves-effect waves-light btn">
-                            <i class="material-icons left">send</i>submit</a>
+                            <i class="material-icons left">send</i>
+                            <button class="waves-effect waves-light btn" type="submit" value="submit"> submit</button>
+                        </a>
                     </div>
                 </div>
             </div>
